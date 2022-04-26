@@ -8,7 +8,6 @@ def countpatterninfile():
     count  = 0
     hand = open('mbox-long.txt')
     for line in hand:
-        line = line.rstrip()
         if re.search(regular_expression, line):
             count += 1
     print("mbox.txt had", count, "lines that matched", regular_expression )
